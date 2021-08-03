@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+
+
+\title{Beispiel konvergierende Funktionenfolge}
+
+\begin{document}
+\maketitle
+
+Beispiel:
+\vspace{5mm}
+
+D = [0,1];   \begin{math}
+f_n(x) = x^n \quad (n \in \mathbb{N}).\end{math} Es gilt: \vspace{5mm}
+
+\begin{math} f(x) := 
+\begin{cases} 
+0, & 0 \leq x < 1\\
+1, & x = 1
+\end{cases} \end{math}
+\vspace{5mm}
+
+$f_n$ konvergiert auf [0,1] punktweise gegen $f$.
+
+\vspace{10mm}
+\textbf{Bemerkung:} Punktweise Konvergenz von $(f_n)$ auf \textit{D} gegen $f$ bedeutet:
+
+\vspace{5mm}
+\begin{math}
+\forall x \in D \quad \forall \epsilon > 0 \quad \exists n_0 = n_0(\epsilon, x) \in \mathbb{N} \quad \forall n \geq n_0: |f_n(x) - f(x)| < \epsilon.
+\end{math}
+
+\end{document}
